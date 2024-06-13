@@ -1,0 +1,83 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #01212c, #023e58); /* Degradê do azul mais escuro para um azul mais claro */
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/media/unicesumar-logo-1.png'); /* Caminho da sua logo */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; /* Opacidade quase invisível */
+    z-index: -1; /* Coloca a logo atrás do conteúdo */
+}
+
+.tela-inicial {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #01212c, #023e58); /* Degradê do azul mais escuro para um azul mais claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease; /* Transição suave */
+}
+
+.conteudo {
+    text-align: center;
+    color: white;
+    margin-top: -50px; /* Ajustar o texto "Bem-vindo" mais para cima */
+}
+
+h1 {
+   
+    margin-bottom: 30px; /* Espaço abaixo do "Bem-vindo" */
+}
+
+h4 {
+   font-size: large; 
+}
+p {
+    
+    font-size: large;
+    line-height: 20px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(1, 33, 44, 1); /* Azul mais escuro com opacidade total */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #001a35;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}

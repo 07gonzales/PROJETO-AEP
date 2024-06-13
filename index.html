@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidade Gerencial</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Contab. Gerencial</a></li>
+                    <li><a href="importancia.html">Importância</a></li>
+                    <li><a href="metodos.html">Métodos</a></li>
+                    <li><a href="objetivos.html">Objetivos</a></li>
+                    <li><a href="saude_financeira.html">Saúde Financeira</a></li>
+                    <li><a href="sistema.html">Sistema</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1> A Contabilidade Gerencial</h1>
+            <p> A contabilidade gerencial pode ser definida como um conjunto de métodos contábeis, cuja finalidade é reunir dados relevantes acerca de uma determinada empresa, de modo que contribua para o processo de tomada de decisões. Para tanto, os dados subsidiados por meio da contabilidade financeira são analisados em conjunto com informações respectivas aos custos e orçamentos, com intuito de se obter uma delimitação sobre os preços que serão praticados, metas de curto, médio e longo prazo, bem como os caminhos estratégicos e a empresa deve adotar (FREZZATTI et al. 2011).</p>
+            <br>
+            <h2> A Contabilidade Gerencial oferece diversos benefícios para as empresas, como:</h2>
+            <br>
+            <p>Melhoria na tomada de decisões: fornece informações precisas e relevantes para que os gestores tomem decisões mais assertivas e eficazes.</p>
+                <p>Redução de custos: identifica áreas de desperdício e oportunidades de otimização dos recursos da empresa.</p>
+                <p>Aumento da rentabilidade: auxilia na definição de preços competitivos e na otimização da produção.</p>
+                <p>Melhoria do planejamento estratégico: fornece informações para que a empresa defina seus objetivos e trace planos para alcançá-los.</p>
+                <p>Maior controle financeiro: permite que a empresa acompanhe de perto seus resulta- dos financeiros e identifique possíveis problemas.</p>
+                <p>Alguns exemplos de ferramentas e técnicas utilizadas na Contabilidade Gerencial:
+                <p>Custeio por absorção: permite determinar o custo total de produção de um produto ou serviço.</p>
+                <p>Custeio variável: identifica os custos que variam de acordo com o volume de produção.</p>
+                <p>Análise de custos-benefícios: auxilia na avaliação de projetos e investimentos. </p>
+                <p>Orçamento empresarial: define os objetivos financeiros da empresa e os recursos necessários para alcançá-los.</p>
+                <p>Análise do ponto de equilíbrio: determina o volume de vendas necessário para cobrir os custos da empresa.</p>
+                <p>Fluxo de caixa: acompanha as entradas e saídas de dinheiro da empresa.</p>
+                <br>
+                <p>Conforme elucidado por <i><a href="https://www.amazon.com.br/Contabilidade-Gerencial-Silvio-Aparecido-Crepaldi/dp/8522469504"/ target=”_blank a> Crepaldi</a></i>, em ‘’Contabilidade Gerencial’’ ed 4 (2008), a contabilidade gerencial pode ser descrita como a ramificação da contabilidade, que tem por objetivo fornecer ferramentas aos adminis- tradores de empresas, as quais auxiliem em suas funções gerenciais, desta forma, seu foco refere-se à otimização do uso dos recursos econômicos da organização por intermédio de um controle adequado de seus insumos realizado por um sistema de informação gerencial.</p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy;  Contabilidade Gerencial. Engenharia de Software - UNICESUMAR. Todos os direitos reservados.</p>
+    </footer>
+    <div class="back-to-top">
+        <a href="index.html">
+            <span>&#8679;</span> <!-- Seta para cima -->
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const mainContent = document.getElementById('mainBody');
+            setTimeout(() => {
+                mainContent.classList.add('visible');
+            }, 100); // Pequeno atraso para garantir a transição suave
+        });
+    
+        function voltarTelaInicial() {
+            const mainContent = document.getElementById('mainBody');
+            mainContent.classList.remove('visible');
+            mainContent.classList.add('hidden');
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 1000); // Tempo igual ao da transição
+        }
+        </script>
+
+</body>
+</html>

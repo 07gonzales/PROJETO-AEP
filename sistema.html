@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Financeiro</title>
+    <link rel="stylesheet" href="/css/sistema.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <ul>
+                        <li><a href="index.html">Contab. Gerencial</a></li>
+                        <li><a href="importancia.html">Importância</a></li>
+                        <li><a href="metodos.html">Métodos</a></li>
+                        <li><a href="objetivos.html">Objetivos</a></li>
+                        <li><a href="saude_financeira.html">Saúde Financeira</a></li>
+                        <li><a href="sistema.html">Sistema</a></li>
+                        <li><a href="estoque.html">Estoque</a></li>
+                    </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1>Sistema Financeiro</h1>
+            <form id="financeForm">
+                <div class="form-group">
+                    <label for="entrada">Entrada de Mercadorias (R$):</label>
+                    <input type="text" id="entrada" required>
+                </div>
+                <div class="form-group">
+                    <label for="saida">Saída de Mercadorias (R$):</label>
+                    <input type="text" id="saida" required>
+                </div>
+                <div class="form-group">
+                    <label for="faturamento">Faturamento (R$):</label>
+                    <input type="text" id="faturamento" required>
+                </div>
+                <button type="button" onclick="gerarRelatorio()">Gerar Relatório</button>
+            </form>
+            <div id="relatorio" class="relatorio">
+                <h2>Relatório de Lucro e Impostos</h2>
+                <p id="lucro"></p>
+                <p id="pis"></p>
+                <p id="cofins"></p>
+                <p id="irpj"></p>
+                <p id="iss"></p>
+                <p id="icms"></p>
+            </div>
+            <canvas id="lucroImpostosChart" width="400" height="200"></canvas>
+            <canvas id="receitaDespesaChart" width="400" height="200"></canvas>
+            <canvas id="distribuicaoImpostosChart" width="300" height="300"></canvas>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;  Contabilidade Gerencial. Engenharia de Software - UNICESUMAR. Todos os direitos reservados.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+    display: block;
+    flex-direction: column;
+}
+
+header {
+    background-color: #01212c;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Ajuste conforme necessário */
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #01212c;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem; /* Espaçamento interno para todas as seções */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+main h1  {
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 2.5rem; /* Tamanho maior para os parágrafos */
+    line-height: 1.4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main h2  {
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 2.3rem; /* Tamanho maior para os parágrafos */
+    line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main h3  {
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 1.5rem; /* Tamanho maior para os parágrafos */
+    line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main h4  {
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 1.3rem; /* Tamanho maior para os parágrafos */
+    line-height: 1.;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main p {
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 1.3rem; /* Tamanho maior para os parágrafos */
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #01212c   ;
+    color: #fff;
+}
+
+.back-to-top {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000; /* Garante que o botão fique acima de outros conteúdos */
+    opacity: 0.6; /* Opacidade inicial */
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo meio transparente */
+    text-align: center;
+    line-height: 40px; /* Centraliza verticalmente */
+    border-radius: 50%; /* Botão circular */
+    color: #fff; /* Cor do ícone */
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+.back-to-top a:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.back-to-top span {
+    font-size: 24px; /* Tamanho do ícone */
+}
